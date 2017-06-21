@@ -1,0 +1,62 @@
+SEOS BLUE changelog
+= Version 2.2.6  April 02 2017 =
+* CHANGE: Style CSS File
+* FIXED: Button Issue
+
+= Version 2.2.5  April 02 2017 =
+* FIXED: Theme Image Issue
+
+= Version 2.2.4  April 02 2017 =
+* CHANGE: Theme Image:
+* ADDED: Premium Demo
+
+= Version 2.2.3  February 18 2017 =
+* CHANGE: Theme URI:
+
+= Version 2.2.2  February 07 2017 =
+* CHANGE: Theme Homepage
+
+= Version 2.1.2  September 20 2016 =
+* CHANGE: Theme URI
+* CHANGE: Screenshot
+
+= Version 2.1.1  September 19 2016 =
+* ADDED: Home Image
+* CHANGE: Text Domain
+
+
+= Version 2.1.0 03 April 2016 =
+* CHANGE: Screenshot
+
+= Version 2.0.0 31 March 2016 =
+* ADDED: TABLE OF CONTENTS in Style.css File
+* ADDED: Entry Meta
+* ADDED: Fa Icons
+* ADDED: Translation
+* ADDED: Search Form Styles
+* ADDED: Add Theme Support Woocommerce
+* ADDED: Load Theme Textdomain
+* CHANGE: Media Queries - Article Image Size
+* FIXED: Issue Styles
+* FIXED: Issue Sidebar - RSS Icon
+* FIXED: Issue - Header Image - Sizes
+
+= Version 1.1.0 19 March 2016 =
+* ADDED: TABLE OF CONTENTS in Style.css File
+* ADDED: Search Form Styles
+* CHANGE: Media Queries - Article Image Size
+* FIXED: Issue Sidebar - Select Width
+* FIXED: Issue Sidebar - RSS Icon
+* FIXED: Issue - Header Image - Sizes
+
+= Version 1.09
+* Update - How to use Seos Blue
+* Css class - Nav Menu.
+
+= Version 1.08
+* Update custum header img - responsive.
+* Css class - Screen reader text.
+
+
+= Version 1.01 =
+* Initial release

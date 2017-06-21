@@ -1,0 +1,1027 @@
+/*
+Theme Name: Seos Blue
+Description: Seos Blue is blue multi-purpose WordPress theme with a responsive 2 column layout. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer. Customizer - header image, background image, background color, hover color, header color, nav hover color, footer background color, footer options. Check premium demo: http://seosthemes.info/seos-blue-free-wordpress-theme/
+Author: SEOS - Tsvetomir Tsvetanov
+Author URI: http://seosthemes.com/
+Theme URI: http://seosthemes.info/seos-blue-free-wordpress-theme/
+Tags: one-column, two-columns, right-sidebar, left-sidebar, grid-layout, flexible-header, buddypress, custom-background, custom-header, custom-logo, custom-menu, custom-colors, editor-style, featured-image-header, featured-images, full-width-template, footer-widgets, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
+Version: 2.2.6
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html, Seos Blue WordPress Theme Copyright 2015, http://seosthemes.com/
+Seos Blue WordPress Theme is distributed under the terms of the GNU GPL
+Text Domain: seos-blue
+*/
+
+/*--------------------------------------------------------------
+ TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Basic
+# Header
+# Nav
+# Main
+# Section
+# Article
+# Aside
+# Footer
+# Images
+# Forms
+# Other
+# Media queries
+
+/* ----------------------------------- Basic ----------------------------------- */
+
+@font-face {
+font-family: "EnchantedLand";
+src: url('./fonts/EnchantedLand.otf');
+} 
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, font, q, strong, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: Arial;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1em;	
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-family: "EnchantedLand";
+	font-size: 19px;
+	color:white;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+
+
+h1 {
+	font-size: 40px;
+	color: yellow;
+	font-family:"EnchantedLand";
+}
+
+h2 {
+	font-size: 34px;
+	color: yellow;
+	font-family:"EnchantedLand";
+}
+
+h3 {
+	font-size: 22px;
+	color: #21759b;
+	font-family:"EnchantedLand";
+}
+
+h4 {
+	font-size: 18px;
+	color: #21759b;
+	font-family:"EnchantedLand";
+}
+
+h5,
+h6 {
+	font-size: 15px;
+	color: #21759b;
+	font-family:"EnchantedLand";
+}
+
+a {
+    word-wrap: break-word;
+	color: yellow;
+	font-family: "EnchantedLand";
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CE0000;
+}
+
+table {
+	border-collapse: separate;
+}
+
+table td,
+table th {
+	border: 1px solid #aaa;
+	padding: 5px;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	quotes: none;
+}
+
+b,
+strong {
+	font-weight: 600;
+}
+
+details a,
+aside li,
+section p,
+article li {
+	line-height: 22px;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+ q {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	quotes: none;
+	background: #F0F0F0;
+	display: inline-block;
+	border-left: 4px solid #888;
+	padding: 4px;
+    font-style: italic;
+	word-wrap: break-word;
+}
+
+
+
+/* ----------------------------------- Header ----------------------------------- */
+
+header {
+	
+	-webkit-box-shadow: inset 0px -89px 180px 29px rgba(0,0,0,0.62);
+	-moz-box-shadow: inset 0px -89px 180px 29px rgba(0,0,0,0.62);
+	
+	max-width: 1300px;
+	height: 100%;
+	
+	color: #FFFFFF;
+}
+
+
+
+header .site-name {
+    word-wrap: break-word;
+	letter-spacing: 5px;
+	height: 100%;
+	font-size: 100px;
+	font-weight: 900;
+	padding-top: 0;
+	margin: 0;
+	color:yellow;
+	font-family: EnchantedLand;
+}
+
+header p {
+	padding-bottom: 10px;
+}
+
+#header-img {
+	width: 100%;
+	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-image: url('img/white.png');
+	background-position: center;
+}
+
+.icon:after,
+#header:after,
+header:after {
+	content: ""; 
+	clear: both; 
+	display: block;
+}
+
+#header {
+	text-align: center;
+	height: auto;
+}
+
+#header-home {
+	height: auto;
+	width: 100%;
+	text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-position: center;
+}
+
+.sb-home-img {
+	position: relative;
+    box-sizing: border-box;
+	font-size:1px;
+}
+
+.sb-home-img  img {
+	position: relative;
+    box-sizing: border-box;
+	width: 100%;
+}
+
+.sb-home-img  .sb-read-more {
+	position: absolute;
+	top: 50%;
+    width: 100%;
+	text-align: center;
+	display: block;
+	-webkit-animation-duration: 0.7s !important;
+    animation-duration: 0.7s !important;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+	z-index: 111;
+}
+
+.sb-home-img  .sb-read-more a{
+	text-align: center;
+	background: #fff;
+	padding: 10px;
+	border: 4px solid;
+	font-size: 30px;
+	opacity: 0.7;
+	font-family: EnchantedLand;
+	
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+/* ----------------------------------- Nav ----------------------------------- */
+
+nav {
+	max-width: 1300px;
+	border-top: 1px solid yellow;
+	background: purple;
+	-webkit-box-shadow: 0px 17px 56px -13px rgba(91,91,91,1);
+	-moz-box-shadow: 0px 17px 56px -13px rgba(91,91,91,1);
+	box-shadow: 0px 17px 56px -13px rgba(91,91,91,1);
+}
+
+nav ul {
+	display: inline-table;	
+	position: relative;
+	list-style: none;
+	color: #FFFFFF;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float: left;
+	min-width: 80px;
+	text-align: center;
+	border-right: 1px solid #0E5490;
+	margin:5px;
+	font-family: EnchantedLand;
+}
+
+nav ul li a:hover {
+	color: #2B9BC4;
+}
+
+nav ul li:hover {
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+}
+
+nav ul li:hover a {
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+}
+	
+nav ul li a {
+	display: block; 
+	padding: 8px;
+	font-family: "EnchantedLand";
+	font-size: 29px;
+	font-weight: bold;
+	color: yellow;
+	text-decoration: none;
+	border-right: 2px solid yellow;
+}
+	
+nav ul ul {
+	position: absolute;
+	border-radius: 0px;
+	padding: 0;
+}
+
+nav ul ul li {
+	position: relative;
+	float: none;
+	min-width: 100px;
+	font-size: 16px;
+	z-index: 9999;
+	text-align: left;
+	margin: 0;
+}
+
+nav ul ul li a {
+	letter-spacing: 2px;
+	font-size: 14px;
+	border-bottom: 2px solid yellow;
+	border-top: 1px solid yellow;
+	background: purple;
+}
+	
+nav ul ul li a:hover {
+	color: #2B9BC4;
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+	
+}
+
+nav ul ul ul {
+	position: absolute; 
+	left: 100%;
+	top: 0;
+	width: 100%;
+}
+
+nav:after {
+	content: ""; clear: both; display: block;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* ----------------------------------- Main ----------------------------------- */
+
+main {
+	max-width: 1300px;
+	padding: 20px 60px 20px 60px;
+	
+	border-top: 1px solid yellow;
+	overflow: hidden;
+	-webkit-box-shadow: inset 0px 17px 56px -13px rgba(91,91,91,1);
+	-moz-box-shadow: inset 0px 17px 56px -13px rgba(91,91,91,1);
+	box-shadow: inset 0px 17px 56px -13px rgba(91,91,91,1);
+
+}
+
+main:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.sb-clear {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.content:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/* ----------------------------------- Section ----------------------------------- */
+
+section {
+	width: 69%;
+	float: left;
+	word-wrap: break-word;
+}
+
+.section-right {
+	width: 69%;
+	float: right;
+	padding: 0  0 0 10px;
+	word-wrap: break-word;
+}
+
+section img {
+	max-width: 100%;
+}
+
+section .ol-comments li,
+section .ol-comments {
+	list-style: none;
+}
+
+/* ----------------------------------- Article ----------------------------------- */
+
+
+article {
+	width: 100%;
+	margin-top: 20px;
+	border-bottom: 1px solid #C0C0C0;
+	padding-bottom: 10px;
+}
+
+article h1 {
+	padding: 15px 0 20px 0;
+	color: yellow;
+	font-family: EnchantedLand;
+}
+
+article p,
+article ul,
+article ol,
+article table,
+article dl {
+	margin-bottom: 20px;
+}
+
+article ul,
+article ol {
+	margin-bottom: 20px;
+}
+
+article ul,
+article ol {
+	padding: 0 0 0 16px;
+}
+
+article ul ul,
+article ol ol {
+	margin-bottom: 0;
+}
+
+.full-width {
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.full-width .content{
+	padding: 10px;
+}
+
+.entry-meta {
+	padding: 10px 0 10px 0;
+}
+
+/* ----------------------------------- Aside ----------------------------------- */
+
+aside {
+	float: right;
+	width: 27%;
+	word-wrap: break-word;
+	padding-top: 40px;
+}
+
+aside h2 {
+	margin: 10px 0 10px 0;
+	color: yellow;
+	background:purple;
+	padding: 8px;
+	-webkit-box-shadow: 0px 17px 56px -13px rgba(91,91,91,1);
+	-moz-box-shadow: 0px 17px 56px -13px rgba(91,91,91,1);
+	box-shadow: 0px 17px 56px -13px rgba(91,91,91,1);
+	font-family: EnchantedLand;
+}
+
+.sidebar-left {
+	float: left;
+	width: 27%;
+ 	word-wrap: break-word;
+    padding-left: 10px;
+}
+
+aside ul li a:hover {
+	margin-left: 5px;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+aside ol,
+aside ul {
+	list-style: none;
+}
+
+aside select {
+	max-width: 100%;
+}
+
+/* ----------------------------------- Footer ----------------------------------- */
+
+
+footer {
+	
+	padding: 10px 0 20px 0;
+	color: #FFFFFF;
+	text-align: center;
+	word-wrap: break-word;
+	-webkit-box-shadow: inset 0px -89px 180px 29px rgba(0,0,0,0.62);
+	-moz-box-shadow: inset 0px -89px 180px 29px rgba(0,0,0,0.62);
+	box-shadow: inset 0px -89px 180px 29px rgba(0,0,0,0.62);
+}
+
+#footer {
+	background-image: url(img/backgroundseos.png);
+	height: 100%;
+	word-wrap: break-word;
+}
+
+footer a {
+	color: #FFFFFF;
+}
+
+
+#myname,
+#company,
+#email,
+#tel{
+	display:inline;
+	font-size: 16px;
+	line-height:22px;
+}
+
+.option-con {
+	max-width:30%;
+	min-width: 200px;
+	margin: 0 auto;
+	margin-top:10px;
+	border-left: 1px solid #105FA8;
+	border-right: 1px solid #105FA8;
+	border-bottom: 1px solid #105FA8;
+
+}
+
+.option-con p {
+	word-wrap: break-word;
+}
+
+details {
+	margin-top: 10px;
+	opacity: 0.8;
+}
+
+details p{
+	line-height: 22px;
+}
+
+details a {
+	margin-left: 15px;
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+}
+
+details a:hover {
+	color: #CE0000;
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+}
+
+
+/* ----------------------------------- Images ----------------------------------- */
+
+
+img {	
+	max-width: 100%;
+	height: auto;
+}
+
+img aside {
+	max-width: 27%;
+}
+
+.img-search img {
+	width: 100%;
+	height: 200px;
+}
+
+.alignnone {
+	width: auto;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.avatar {
+	width: 100px;
+}
+
+.img {
+	height: auto;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+.grow {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.wp-caption,
+.wp-caption-text,
+.gallery-caption {
+	max-width:100%;
+	font-size:14px;
+}
+
+iframe,
+embed {	
+	width: 100%;
+	min-height: 400px;
+}
+
+.description {
+	margin-top: 0px;
+}
+
+
+/* ----------------------------------- Forms ----------------------------------- */
+
+
+form {
+	width: 100%;
+}
+
+input {
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	letter-spacing: 3px;
+   
+    vertical-align: middle;
+}
+
+#submit {
+	background-image: url(img/button.png);
+	font-weight: bold;
+	letter-spacing: 3px;
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	color: #003154;
+	height: 34px;
+}
+
+#s {
+	color: #aaa;
+}
+
+textarea {
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 6px;
+	margin-right: 10px;
+	min-width: 100px;
+	color: yellow;
+}
+
+.blue {
+	font-size: 22px;
+	color: #21759b;
+}
+
+#searchsubmit {
+	background-image: url(img/search-button.png);
+	width: 34px;
+	height: 32px;
+	margin-left: 5px;
+	padding-left: 7px !important;
+}
+
+.bypostauthor {
+	padding-left: 6px;
+}
+
+
+/* ----------------------------------- Other ----------------------------------- */
+
+
+.back-to-top-link {
+	background-image: url(img/back-top.png);
+	width:80px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.back-to-top-link:hover {
+	opacity: 0.8;
+}
+
+.read-more {
+	display: block;
+	width: 80px;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 5px;
+	margin-top: 10px;
+	background: #003154;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+.read-more:hover {
+	color: #FFFFFF;
+	background: #21759b;
+}
+
+.nextpage{
+	width:100%;
+	margin:10px;
+}
+
+.pagination {
+	margin: 0 auto;
+	width:180px;
+
+}
+
+.pagination a {
+	font-size: 14px;
+	padding: 6px;
+	background: #1A5D7A;
+	color: #FFFFFF;
+	border-radius: 2px;
+}
+
+.pagination a:hover {
+	opacity: 0.8;
+	color: #FFFFFF;
+}
+
+.sticky  {
+	background: #FFE460;
+}
+
+small {
+	color: #21759b;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* ----------------------------------- Media queries ----------------------------------- */
+
+
+@media screen and (max-width: 770px) {
+	section,
+	aside,
+	.section-right,
+	.sidebar-left,
+	img,
+	table,
+	.content ul {
+       	display: block;
+		position: relative;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+    }
+	
+	article ul {
+		position: relative;
+		width: 100px;
+		margin: 0 auto;
+    }
+
+	header {
+		max-height: 100%;
+		word-wrap: break-word;
+    }
+	
+	header .site-name {
+		font-size: 40px;
+
+    }
+
+	.nav-ico ul{
+		display: none;
+    }
+
+
+	#menu-icon {
+		width: 52px;
+		height: 44px;
+		display: block;
+    }
+
+		nav .nav-ico {
+		width:180px;
+		padding:0;
+		margin: 0;
+    }
+	
+	.nav-ico:hover ul,
+	.nav-ico:hover ul li,
+	.nav-ico:hover ul ul,
+	.nav-ico:hover ul ul li {
+		display: block;
+		position: relative;
+		border: none;
+		float: none;
+		width: 100%;
+		text-align: left;
+		left: 0;
+    }
+
+	nav ul li a, 
+	nav ul li, 
+	nav ul ul li a {
+		border: none;
+    }
+
+	nav a:hover {
+		color: #2B9BC4;
+		-webkit-transition: all 0.4s linear 0s;
+		-moz-transition: all 0.4s linear 0s;
+		-o-transition: all 0.4s linear 0s;
+		transition: all 0.4s linear 0s;
+		
+		
+    }
+
+	.menu-button {
+		background: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		border-radius: 2px;
+		margin: 8px 0 0 10px;
+		width: 40px;
+		height: 4px;	
+		display: block;
+    }
+	nav ul li {
+		margin: 0;
+    }
+	
+	.rss-widget-icon {
+		width: 20px;
+		height: 20px;
+	}
+	
+	.img-search img {
+		height: auto;
+	}
+
+}
