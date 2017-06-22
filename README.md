@@ -3,7 +3,6 @@
 
 ![TTGC](http://thetaleofgreatcosmos.fr/wp-content/themes/seos-blue/img/The_Tale_of_Great_Cosmos.png)
 
-# ttgc
 The Tale of Great Cosmos theme for Wordpress
 
 ## How to use?
